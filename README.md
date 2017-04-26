@@ -4,7 +4,6 @@
 ```
 druid:
     dataSource:
-        type: com.alibaba.druid.pool.DruidDataSource
         driver-class: com.mysql.jdbc.Driver
         url: jdbc:mysql://localhost:3306/test
         username: root
