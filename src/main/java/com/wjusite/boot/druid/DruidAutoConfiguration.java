@@ -21,7 +21,7 @@ import org.springframework.context.annotation.Configuration;
 @AutoConfigureBefore(DataSourceAutoConfiguration.class)
 public class DruidAutoConfiguration {
 
-    @Bean(name = "druidDataSource", initMethod = "init", destroyMethod = "close")
+    @Bean(name = "dataSource", initMethod = "init", destroyMethod = "close")
     @ConfigurationProperties(prefix = "druid.dataSource")
     public DruidDataSource druidDataSource() {
         return new DruidDataSource();
